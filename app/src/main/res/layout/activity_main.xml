@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.main.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="Cadastro" />
+
+    <Button
+        android:id="@+id/btnListagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnCadastrar"
+        android:layout_alignRight="@+id/btnCadastrar"
+        android:layout_below="@+id/btnCadastrar"
+        android:layout_marginTop="84dp"
+        android:text="Listagem" />
+
+    <Button
+        android:id="@+id/btnSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnListagem"
+        android:layout_alignStart="@+id/btnListagem"
+        android:layout_below="@+id/btnListagem"
+        android:layout_marginTop="56dp"
+        android:text="Sobre" />
+
+    <Button
+        android:id="@+id/btnFechar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSobre"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnSobre"
+        android:layout_marginBottom="57dp"
+        android:text="Fechar" />
+</RelativeLayout>

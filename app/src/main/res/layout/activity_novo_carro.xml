@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.monteiro.carstation.ui.novocarro.NovoCarro"
+
+    android:orientation="vertical">
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/car_plate" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/car_brand" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtModelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/car_model" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtAnoFabricacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/car_year" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtUrlCarro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/url_image_car" />
+
+        </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/car_price" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCadastrarCarro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_cadastro" />
+
+
+</LinearLayout>

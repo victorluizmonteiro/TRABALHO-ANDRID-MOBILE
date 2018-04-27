@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Carros</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="register_cadastro">Register</string>
+    <string name="list_lista">List</string>
+    <string name="about_sobre">About</string>
+    <string name="close_app">Close</string>
+    <string name="label_new_car">New Car</string>
+    <string name="car_plate">Car Plate</string>
+    <string name="car_model">Model</string>
+    <string name="car_year">Year of Manufacture</string>
+    <string name="url_image_car">Image</string>
+    <string name="car_brand">Brand</string>
+    <string name="car_price">Price</string>
+</resources>
