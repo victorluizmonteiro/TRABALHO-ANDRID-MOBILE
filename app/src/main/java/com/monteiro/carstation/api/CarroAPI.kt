@@ -2,9 +2,7 @@ package com.monteiro.carstation.api
 
 import com.monteiro.carstation.model.Carro
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
+import retrofit2.http.*
 
 /**
  * Created by Monteiro on 10/03/18.
@@ -12,9 +10,12 @@ import retrofit2.http.POST
 interface CarroAPI {
 
     @GET("carro")
-    fun buscarTodos(): Call<List<Carro>>
+    fun buscarTodos(): Call<MutableList<Carro>>
 
     @POST("carro")
     fun salvar(@Body carro: Carro): Call<Void>
+
+    @DELETE("carro/deletar/{placa}")
+    fun remover(@Path("placa")placa:String):Call<Void>
 
 }

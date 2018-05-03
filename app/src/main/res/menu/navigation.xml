@@ -4,16 +4,16 @@
     <item
             android:id="@+id/navigation_lista"
             android:icon="@drawable/ic_home_black_24dp"
-            android:title="Ver Carros"/>
+            android:title="@string/see_car"/>
 
     <item
             android:id="@+id/navigation_novo"
             android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="Novo Carro"/>
+            android:title="@string/label_new_car"/>
 
     <item
             android:id="@+id/navigation_sobre"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="Sobre"/>
+            android:title="@string/about_sobre"/>
 
 </menu>
