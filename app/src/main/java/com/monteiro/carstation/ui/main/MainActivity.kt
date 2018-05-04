@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.monteiro.carstation.R
+import com.monteiro.carstation.ui.buscar.SearchForPlateFragment
 import com.monteiro.carstation.ui.listacarro.ListaCarroFragment
 import com.monteiro.carstation.ui.novocarro.NovoCarroFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,6 +21,11 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_novo -> {
                 changeFragment(NovoCarroFragment())
                 return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_search_for_plate ->{
+                changeFragment(SearchForPlateFragment())
+                return@OnNavigationItemSelectedListener true
+
             }
             R.id.navigation_sobre -> {
                 Toast.makeText(this, "Em construção",

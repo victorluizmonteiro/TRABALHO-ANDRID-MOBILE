@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.buscar.SearchForPlateFragment">
+
+    <TextView
+        android:id="@+id/txtAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtValor"
+        android:layout_marginBottom="159dp"
+        android:text="@string/car_year"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtModelo"
+        android:layout_marginBottom="29dp"
+        android:text="@string/car_price"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtModelo"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtPlaca"
+        android:layout_marginBottom="81dp"
+        android:text="@string/car_model" />
+
+    <TextView
+        android:id="@+id/txtPlaca"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="198dp"
+        android:layout_marginEnd="-81dp"
+        android:layout_toStartOf="@+id/inputSearchPlate"
+        android:text="@string/car_plate"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/labelSearchPlate"
+        android:layout_width="155dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_insert_plate" />
+
+    <EditText
+        android:id="@+id/inputSearchPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSearchPlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="188dp"
+        android:text="@string/btn_search" />
+
+    <TextView
+        android:id="@+id/txtMarca"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtValor"
+        android:layout_marginBottom="129dp"
+        android:text="@string/car_brand"
+        tools:ignore="RtlCompat,UnknownId" />
+
+</RelativeLayout>

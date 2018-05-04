@@ -8,7 +8,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,9 +24,10 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:hint="@string/car_plate"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="@string/car_plate" />
             </android.support.design.widget.TextInputLayout>
 
 
@@ -33,9 +37,9 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:hint="@string/car_brand"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/car_brand" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -44,12 +48,10 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:hint="@string/car_model"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/car_model" />
             </android.support.design.widget.TextInputLayout>
-
-
 
 
             <android.support.design.widget.TextInputLayout
@@ -58,10 +60,10 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:inputType="number"
-                    android:hint="@string/car_year"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/car_year"
+                    android:inputType="number" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -70,9 +72,9 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:hint="@string/url_image_car"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/url_image_car" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -81,14 +83,23 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:inputType="numberDecimal"
-                    android:hint="@string/car_price"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:hint="@string/car_price"
+                    android:inputType="numberDecimal" />
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
     </ScrollView>
+
+    <Button
+        android:id="@+id/btnEditarCarro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="425dp" />
 
 
 </android.support.constraint.ConstraintLayout>

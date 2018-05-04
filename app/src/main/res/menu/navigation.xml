@@ -8,9 +8,9 @@
 
 
     <item
-        android:id="@+id/navigation_lsta"
+        android:id="@+id/navigation_search_for_plate"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/see_car"/>
+        android:title="@string/btn_search"/>
 
     <item
             android:id="@+id/navigation_novo"

@@ -34,4 +34,7 @@
     <string name="password">Senha</string>
     <string name="exit">Sair</string>
     <string name="username">Usuário</string>
+    <string name="edit">Editar</string>
+    <string name="label_insert_plate">Informe a placa</string>
+    <string name="btn_search">Buscar</string>
 </resources>

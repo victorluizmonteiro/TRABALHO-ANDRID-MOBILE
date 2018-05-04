@@ -32,7 +32,8 @@
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".ui.novoUsuario.CadastroUsuarioActivity"></activity>
+        <activity android:name=".ui.novoUsuario.CadastroUsuarioActivity" />
+        <activity android:name=".ui.buscar.SearchForPlateFragment"></activity>
     </application>
 
 </manifest>

@@ -39,4 +39,7 @@
     <string name="password">Password</string>
     <string name="username">Username</string>
     <string name="exit">Exit</string>
+    <string name="edit">Edit</string>
+    <string name="label_insert_plate">Insert plate</string>
+    <string name="btn_search">Search</string>
 </resources>

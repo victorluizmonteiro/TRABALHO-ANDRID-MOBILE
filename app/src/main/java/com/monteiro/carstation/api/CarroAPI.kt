@@ -12,6 +12,9 @@ interface CarroAPI {
     @GET("carro")
     fun buscarTodos(): Call<MutableList<Carro>>
 
+    @GET("carro/{placax}")
+    fun buscarPelaPlaca(@Path("placax")placa:String):Call<Carro>
+
     @POST("carro")
     fun salvar(@Body carro: Carro): Call<Void>
 
