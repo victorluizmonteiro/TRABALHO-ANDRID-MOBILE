@@ -28,4 +28,10 @@
     <string name="car_brand">Marca</string>
     <string name="car_price">Preço</string>
     <string name="see_car">Ver Carros</string>
+    <string name="register">Registrar</string>
+    <string name="login">Logar</string>
+    <string name="cleanFields">Limpar Campos</string>
+    <string name="password">Senha</string>
+    <string name="exit">Sair</string>
+    <string name="username">Usuário</string>
 </resources>

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.animation.AnimationUtils
 import com.monteiro.carstation.R
-import com.monteiro.carstation.ui.main.MainActivity
+import com.monteiro.carstation.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
@@ -27,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
          Que realiza a troca de activity após 3 segundos
          */
         Handler().postDelayed(({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             this.finish();
         }
 

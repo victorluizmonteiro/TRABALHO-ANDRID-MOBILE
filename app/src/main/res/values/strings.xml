@@ -33,4 +33,10 @@
     <string name="car_brand">Brand</string>
     <string name="car_price">Price</string>
     <string name="see_car">See Cars</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="cleanFields">Clean</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="exit">Exit</string>
 </resources>
