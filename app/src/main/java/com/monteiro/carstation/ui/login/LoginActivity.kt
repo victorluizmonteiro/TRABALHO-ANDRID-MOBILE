@@ -4,7 +4,6 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.monteiro.carstation.ui.novoUsuario.CadastroUsuarioActivity
 import com.monteiro.carstation.R
 import com.monteiro.carstation.api.CarroAPI
 import com.monteiro.carstation.api.LoginAPI
