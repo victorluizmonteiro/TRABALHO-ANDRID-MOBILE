@@ -8,6 +8,7 @@ import com.monteiro.carstation.R
 import com.monteiro.carstation.ui.buscar.SearchForPlateFragment
 import com.monteiro.carstation.ui.listacarro.ListaCarroFragment
 import com.monteiro.carstation.ui.novocarro.NovoCarroFragment
+import com.monteiro.carstation.ui.sobre.AboutFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,10 +29,14 @@ class MainActivity : AppCompatActivity() {
 
             }
             R.id.navigation_sobre -> {
-                Toast.makeText(this, "Em construção",
-                        Toast.LENGTH_LONG).show()
+              changeFragment(AboutFragment())
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_close ->{
+                finishAffinity()
+            }
+
+
         }
         false
     }

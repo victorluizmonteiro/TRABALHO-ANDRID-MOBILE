@@ -13,18 +13,33 @@ import com.monteiro.carstation.R.id.*
 import com.monteiro.carstation.api.CarroAPI
 import com.monteiro.carstation.api.RetrofitClient
 import com.monteiro.carstation.model.Carro
+import com.monteiro.carstation.ui.listacarro.ListaCarroFragment
 import kotlinx.android.synthetic.main.activity_editar_carro.*
 import kotlinx.android.synthetic.main.fragment_novo_carro.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.R.attr.fragment
+import android.support.design.widget.BottomNavigationView
+import android.support.v4.app.Fragment
+import com.monteiro.carstation.ui.buscar.SearchForPlateFragment
+import com.monteiro.carstation.ui.novocarro.NovoCarroFragment
+import com.monteiro.carstation.ui.sobre.AboutFragment
+import kotlinx.android.synthetic.main.activity_main.*
+import com.monteiro.carstation.ui.main.MainActivity
+import android.content.Intent
+
+
+
 
 class EditarCarroActivity : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_editar_carro)
 
+        setContentView(R.layout.activity_editar_carro)
         inputPlacaEditar.isEnabled.not()
 
         val carro = intent.getSerializableExtra("carro") as Carro
@@ -56,6 +71,8 @@ class EditarCarroActivity : AppCompatActivity() {
                                         "Carro Atualizado com Sucesso",
                                         Toast.LENGTH_SHORT).show()
                                 limparCampos()
+
+
                             } else {
                                 Toast.makeText(baseContext,
                                         "Não foi possivel atualizar o Carro ",
@@ -67,8 +84,13 @@ class EditarCarroActivity : AppCompatActivity() {
 
 
 
-
     }
+
+
+
+
+
+
     fun carregarDadosCarro(carro: Carro) {
         inputAnoEditar.editText!!.setText(carro.anoLancamento.toString())
         inputMarcaEditar.editText!!.setText(carro.marca.toString())
@@ -85,8 +107,20 @@ class EditarCarroActivity : AppCompatActivity() {
         inputPlacaEditar.editText?.setText("")
         inputValorEditar.editText?.setText("")
         inputUrlImagemEditar.editText?.setText("")
+
+
     }
 
+    override fun onBackPressed() { //Botão BACK padrão do android
+        startActivity(Intent(this, MainActivity::class.java))
+        finishAffinity()
+        return
+    }
+
+
 }
+
+
+
 
 

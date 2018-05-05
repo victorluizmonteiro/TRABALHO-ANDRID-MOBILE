@@ -1,6 +1,8 @@
 package com.monteiro.carstation.ui.listacarro
 
+import android.content.Intent
 import android.os.Bundle
+import android.support.v4.app.ActivityCompat.finishAffinity
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
@@ -13,6 +15,7 @@ import com.monteiro.carstation.api.RetrofitClient
 
 import com.monteiro.carstation.api.CarroAPI
 import com.monteiro.carstation.model.Carro
+import com.monteiro.carstation.ui.main.MainActivity
 import kotlinx.android.synthetic.main.fragment_lista_carro.*
 import kotlinx.android.synthetic.main.item_carro.*
 import kotlinx.android.synthetic.main.item_carro.view.*
@@ -77,4 +80,6 @@ class ListaCarroFragment : Fragment() {
         }
 
     }
+
+
 }// Required empty public constructor

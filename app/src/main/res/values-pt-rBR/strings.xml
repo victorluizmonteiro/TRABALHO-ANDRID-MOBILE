@@ -37,4 +37,6 @@
     <string name="edit">Editar</string>
     <string name="label_insert_plate">Informe a placa</string>
     <string name="btn_search">Buscar</string>
+    <string name="app_version">Versão : v1.0</string>
+    <string name="developer_name">Victor Monteiro</string>
 </resources>

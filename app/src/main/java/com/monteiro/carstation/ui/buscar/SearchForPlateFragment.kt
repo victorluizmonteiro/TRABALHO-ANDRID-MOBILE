@@ -1,5 +1,6 @@
 package com.monteiro.carstation.ui.buscar
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -12,6 +13,7 @@ import com.monteiro.carstation.R.id.txtPlaca
 import com.monteiro.carstation.api.CarroAPI
 import com.monteiro.carstation.api.RetrofitClient
 import com.monteiro.carstation.model.Carro
+import com.monteiro.carstation.ui.main.MainActivity
 import kotlinx.android.synthetic.main.activity_search_for_plate.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -75,6 +77,8 @@ class SearchForPlateFragment : Fragment() {
             }
         }
     }
+
+
     }
 
 

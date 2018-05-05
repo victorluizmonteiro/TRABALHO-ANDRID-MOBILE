@@ -23,9 +23,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        btnExit.setOnClickListener{
-            fecharApp()
-        }
+
 
         btnLogin.setOnClickListener{
            logar()
@@ -36,13 +34,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    fun fecharApp(){
-        finishAffinity()
-    }
 
-    fun goToCadastro(){
-        startActivity(Intent(this, CadastroUsuarioActivity::class.java))
-    }
+
+
 
     fun logar(){
 

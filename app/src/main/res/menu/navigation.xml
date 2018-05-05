@@ -3,24 +3,29 @@
 
     <item
             android:id="@+id/navigation_lista"
-            android:icon="@drawable/ic_home_black_24dp"
+            android:icon="@drawable/ic_dashboard_black_24dp"
             android:title="@string/see_car"/>
 
 
     <item
         android:id="@+id/navigation_search_for_plate"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/btn_search"/>
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="@string/btn_search" />
 
     <item
-            android:id="@+id/navigation_novo"
-            android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="@string/label_new_car"/>
+        android:id="@+id/navigation_novo"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/label_new_car" />
 
     <item
-            android:id="@+id/navigation_sobre"
-            android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/about_sobre"/>
+        android:id="@+id/navigation_sobre"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/about_sobre" />
+    <item
+        android:id="@+id/navigation_close"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="@string/close_app" />
+
 
 
 

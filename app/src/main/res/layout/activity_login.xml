@@ -37,19 +37,4 @@
         tools:layout_editor_absoluteY="247dp"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/register"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="247dp" />
-
-    <Button
-        android:id="@+id/btnExit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/exit"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="247dp" />
 </LinearLayout>
